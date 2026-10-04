@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FridgeRaid- Raid your fridge, find your dinner.</title>
+    <!-- * Linking stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- * Fontawesome Icons -->
+    <script
+      src="https://kit.fontawesome.com/ee2093fa90.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon">
+  </head>
+  <body>
+    <!-- * header element -->
+    <header>
+      <div class="section-1">
+        <div class="logo-img">
+          <img src="./images/logo.png" alt="logo" />
+        </div>
+        <div class="site-title">FridgeRaid</div>
+      </div>
+
+      <div class="section-2">
+        <ul>
+          <li rel>Find Recipes</li>
+          <li>My Pantry</li>
+          <li>Saved</li>
+        </ul>
+      </div>
+
+      <div class="section-3">
+        <i class="fa-solid fa-sliders" style="color: rgb(0, 0, 0)"></i>
+        <i class="fa-solid fa-circle-user" style="color: rgb(0, 0, 0)"></i>
+      </div>
+    </header>
+
+    <!-- * main element -->
+    <main>
+      <div class="glowvy">
+        <i class="fa-solid fa-wand-sparkles" style="color: #3e885b"></i>
+        <p>SMART FRIDGE MATCHER</p>
+      </div>
+      <h1>Turn fridge leftovers into hearty <br> homemade meals.</h1>
+      <p>
+        Type whatever ingredients are on your shelves. We will whip up
+        comforting,<br> zero-waste recipes instantly.
+      </p>
+      <!-- * form element -->
+      <form id="search-form" action="">
+        <!-- * input element -->
+        <input
+          id="ingrediant-input"
+          type="text"
+          name=""
+          placeholder="Try chicken, egg, paneer..."
+          autocomplete="off"
+        />
+        <!-- * Find meals button -->
+        <button type="submit">Find Meals</button>
+      </form>
+      <!-- * Surprise button -->
+      <button type="button" id="surprise-btn">Surpirise Me</button>
+      <!-- * for error message -->
+      <p id="status"></p>
+      <!-- * Results section -->
+      <section id="results"></section>
+    </main>
+    <!-- * Modal -->
+    <div id="modal" class="modal hidden">
+      <!-- * Modal Content -->
+      <div class="modal-content">
+        <!-- * Close button -->
+        <button id="modal-close">X</button>
+        <!-- * Modal body -->
+        <div id="modal-body"></div>
+      </div>
+    </div>
+    <!-- * Linking JS -->
+    <script src="./script.js"></script>
+  </body>
+</html>

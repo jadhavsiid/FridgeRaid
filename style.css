@@ -1,0 +1,105 @@
+/* * Google fonts import */
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+/* * Universal CSS */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* * body */
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: #FCF9F8;
+    font-family: "Plus Jakarta Sans", sans-serif;
+}
+/* * header */
+header{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #FCF9F8;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.04)
+}
+/* * logo and site title */
+.section-1{
+    display: flex;
+    gap: 0.8rem;
+    align-items: center;
+}
+.section-1 .logo-img img{
+    width: 35px;
+    padding: 1rem 0;
+}
+.section-1 .site-title{
+    font-weight: bolder;
+    font-size: 1.5rem;
+}
+/* * Links */
+.section-2 ul{
+    display: flex;
+}
+.section-2 ul li{
+    padding: 0 0.7rem;
+    list-style: none;
+    font-weight: bold;
+}
+.section-2 ul li:hover{
+    cursor: pointer;
+}
+.section-2 ul li:first-child{
+    color: #E05A36;
+}
+/* * Profile and filter icon */
+.section-3{
+    display: flex;
+    gap: 1.5rem;
+}
+.section-3 i{
+    font-size: 1.5rem;
+}
+.section-3 i:hover{
+    cursor: pointer;
+}
+/* * main element */
+main{
+    /* border: 1px solid black; */
+    width: 100%;
+    margin: 3rem 0;
+}
+.glowvy{
+    display: flex;
+    align-items: center;
+    margin: 1em auto;
+    gap: 0.5rem;
+    border: none;
+    width: fit-content;
+    padding: 0.2rem 0.8rem;
+    border-radius: 50px;
+    background-color: #A6F4BE
+}
+.glowvy i{
+    font-size: 0.8rem;
+}
+.glowvy p{
+    font-size: 0.8rem;
+    font-weight: bold;
+    color: #3e885b;
+}
+.glowvy:hover{
+    cursor: pointer;
+}
+main h1{
+    text-align: center;
+    font-size: 2.5rem;
+}
+main p{
+    text-align: center;
+    margin: 0.2rem 0;
+}
+/* * Styling form element */
+#search-form{
+    display: flex;
+
+}
